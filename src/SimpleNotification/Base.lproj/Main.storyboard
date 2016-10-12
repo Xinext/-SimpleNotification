@@ -1,26 +1,60 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleNotification" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="TopView">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rp-uP-WQ2" userLabel="VerticalCriterionView">
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="lWj-r7-S44"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O4F-wT-4SD" userLabel="TitleView">
+                                <color key="backgroundColor" red="0.12549019610000001" green="0.57647058819999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kKb-RR-0zK" userLabel="MainView">
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="O4F-wT-4SD" secondAttribute="trailing" id="2t7-u9-etX"/>
+                            <constraint firstItem="O4F-wT-4SD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="53D-xY-5DR"/>
+                            <constraint firstItem="O4F-wT-4SD" firstAttribute="height" secondItem="3rp-uP-WQ2" secondAttribute="height" multiplier="0.05" id="7zl-5X-dB9"/>
+                            <constraint firstItem="O4F-wT-4SD" firstAttribute="leading" secondItem="3rp-uP-WQ2" secondAttribute="trailing" id="D1q-yN-6A7"/>
+                            <constraint firstAttribute="bottom" secondItem="3rp-uP-WQ2" secondAttribute="bottom" id="Fkn-6O-HgF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kKb-RR-0zK" secondAttribute="bottom" id="JSB-Nl-Zok"/>
+                            <constraint firstItem="3rp-uP-WQ2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JdV-jM-ub2"/>
+                            <constraint firstItem="3rp-uP-WQ2" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qzx-WM-XY0"/>
+                            <constraint firstItem="kKb-RR-0zK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="b7K-nq-AV4"/>
+                            <constraint firstItem="kKb-RR-0zK" firstAttribute="leading" secondItem="3rp-uP-WQ2" secondAttribute="trailing" id="nO3-HI-6rX"/>
+                            <constraint firstItem="kKb-RR-0zK" firstAttribute="top" secondItem="O4F-wT-4SD" secondAttribute="bottom" id="pyE-z4-ZKu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainView" destination="kKb-RR-0zK" id="1Cr-TJ-xxA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116.25" y="123.59154929577466"/>
         </scene>
     </scenes>
 </document>

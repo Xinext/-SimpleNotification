@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		414A2A701DADD8E8004B1B6D /* AdModDef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414A2A6E1DADD8E8004B1B6D /* AdModDef.swift */; };
+		414A2A711DADD8E8004B1B6D /* AdModMgr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414A2A6F1DADD8E8004B1B6D /* AdModMgr.swift */; };
 		41D87DB81DACD1D30058C282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D87DB71DACD1D30058C282 /* AppDelegate.swift */; };
 		41D87DBA1DACD1D30058C282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D87DB91DACD1D30058C282 /* ViewController.swift */; };
 		41D87DBD1DACD1D30058C282 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D87DBB1DACD1D30058C282 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		414A2A6E1DADD8E8004B1B6D /* AdModDef.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdModDef.swift; sourceTree = "<group>"; };
+		414A2A6F1DADD8E8004B1B6D /* AdModMgr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdModMgr.swift; sourceTree = "<group>"; };
 		41D87DB41DACD1D20058C282 /* SimpleNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D87DB71DACD1D30058C282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41D87DB91DACD1D30058C282 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +71,8 @@
 				41D87DBE1DACD1D40058C282 /* Assets.xcassets */,
 				41D87DC01DACD1D40058C282 /* LaunchScreen.storyboard */,
 				41D87DC31DACD1D40058C282 /* Info.plist */,
+				414A2A6E1DADD8E8004B1B6D /* AdModDef.swift */,
+				414A2A6F1DADD8E8004B1B6D /* AdModMgr.swift */,
 			);
 			path = SimpleNotification;
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414A2A711DADD8E8004B1B6D /* AdModMgr.swift in Sources */,
 				41D87DBA1DACD1D30058C282 /* ViewController.swift in Sources */,
 				41D87DB81DACD1D30058C282 /* AppDelegate.swift in Sources */,
+				414A2A701DADD8E8004B1B6D /* AdModDef.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +265,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -307,6 +316,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
